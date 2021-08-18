@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', 'HomeController@home');      
+// Route::get('/signup', 'HomeController@signup');              
+// Route::post('/_dbConnection', 'HomeController@db_signup');        
+
+Route::get('/auth/login', [HomeController::class, 'login']);
+Route::get('/auth/signup', [HomeController::class, 'signup']);
+Route::post('/auth/save', [HomeController::class, 'save'])->name('auth.save');
+Route::post('/auth/check', [HomeController::class, 'check'])->name('auth.check');
+Route::get('/users/dashboard', [HomeController::class, 'dashboard']);

@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: auto;
+    background-image: url("images/signup.jpg");
+}
+
+.bg {
+    /* height: 100vh;
+	background-image: url("signup.jpg");
+	background-repeat: no-repeat; */
+    padding: 80px 0px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.form-wrap {
+    position: relative;
+    box-shadow: -1px 1px 60px 10px black;
+    background: rgba(0, 0, 0, 0.4);
+
+    /* box-shadow: rgba(221,230,237,0.4) 0px 3px 10px 0px;
+	background-color: white; */
+}
+
+#regForm {
+    padding: 50px 30px 30px 30px;
+    background: rgba(126, 122, 122, 0.109);
+}
+
+.form-heading {
+    position: relative;
+    width: 107%;
+    left: -3.5%;
+    top: 15px;
+    padding: 15px 0px;
+    text-align: center;
+    color: white;
+    background-color: #8e2de2;
+    background: linear-gradient(to right, #4a00e0, #8e2de2);
+}
+
+.form-heading:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -20px;
+    width: 18px;
+    height: 20px;
+    background-color: #5f2bc2;
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+.form-heading:after {
+    position: absolute;
+    content: "";
+    right: 0px;
+    bottom: -20px;
+    width: 18px;
+    height: 20px;
+    background-color: #5f2bc2;
+    clip-path: polygon(0 0, 0 100%, 100% 0);
+}
+
+.form-heading h1 {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0px;
+}
+
+.form-heading p {
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+}
+
+#regForm label {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+}
+.input-group-text {
+    height: 30px;
+    margin-top: 5px;
+    color: black;
+}
+
+.form-control {
+    background: rgba(126, 122, 122, 0.226);
+    /* opacity: 0.3; */
+    border-radius: 2px;
+    border: 1px 1px 1px 1px black;
+    /* box-shadow: 5px black; */
+    border-bottom: 1px double white;
+    /* font-size: 18px; */
+    margin-top: 5px;
+    height: 30px;
+    font-weight: 500;
+    color: white;
+    /* color: black; */
+
+    /* border:none;
+	padding:0px;
+	border-bottom: 2px solid #b5b5b5;
+	border-radius: 0px; */
+}
+
+.form-control:focus {
+    /* box-shadow: none; */
+    /* background: transparent; */
+    background: rgba(160, 157, 157, 0.822);
+    color: black;
+    font-weight: 600;
+    opacity: 0.8;
+}
+.input-group-text {
+    font-weight: 600;
+}
+.form-select:focus {
+    box-shadow: none;
+    /* background: transparent; */
+    background: rgba(160, 157, 157, 0.822);
+    opacity: 0.8;
+    color: black;
+    font-weight: 600;
+}
+.form-select {
+    background: rgba(126, 122, 122, 0.226);
+    /* opacity: 0.3; */
+    font-weight: 500;
+    color: white;
+    /* color: black; */
+}
+
+::placeholder {
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+}
+.pass_instruction {
+    color: white;
+}
+
+.btn-primary {
+    background-color: #8e2de2;
+    border: none;
+    margin: 20px 0px 0px 0px;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 600;
+    background: linear-gradient(to right, #4a00e0, #8e2de2);
+}
+
+#p1,
+#p2,
+#p3,
+#p4,
+#p5,
+#p6,
+#p7,
+#p8 {
+    color: #ff0000;
+    font-size: 13px;
+    font-weight: 400;
+}
