@@ -1,0 +1,138 @@
+body {
+    height: auto;
+    /* overflow-x: hidden; */
+}
+
+/* .container-fluid {
+  position: relative;
+  box-shadow: -1px 1px 60px 10px black;
+  background: rgba(252, 248, 248, 0.041);
+  background-color: rgba(245, 245, 245, 0.233);
+  border-radius: 10px;
+} */
+.blurBack {
+    /* opacity: 0.5; */
+    filter: blur(0.3rem);
+    transition: filter 0.5s;
+}
+.container-fluid {
+    position: relative;
+    /* left: 5rem; */
+}
+.extra_margin {
+    margin-top: 50px;
+}
+/* .profile-info {
+    margin-left: 5rem;
+} */
+
+.profile-info h2,
+p {
+    color: black;
+}
+.profile-info h2 {
+    font-size: 40px;
+    font-weight: 500;
+}
+.contact {
+    margin-top: 50px;
+    font-size: 18px;
+}
+.btn-donate {
+    background-color: rgb(196, 30, 30);
+    /* background-image: linear-gradient(
+    45deg,
+    rgba(0, 0, 255, 0.548),
+    rgba(0, 128, 0, 0.548)
+  ); */
+    box-shadow: 0px 10px 10px 0px rgb(59, 53, 53);
+
+    color: white;
+    width: 50%;
+    font-size: large;
+    font-weight: 700;
+    border-radius: 0;
+}
+
+.btn b {
+    padding-left: 5px;
+}
+.btn {
+    margin-top: 10px;
+}
+.btn-color {
+    margin: 10px 5px;
+    color: black;
+    font-size: large;
+}
+.profile-photo {
+    /* height: 80%; */
+    width: 80%;
+    border-radius: 20px;
+}
+p span {
+    color: rgb(22, 92, 53);
+    margin-right: 5px;
+}
+
+.description {
+    background-image: linear-gradient(
+        to bottom,
+        rgb(123, 177, 199),
+        rgb(9, 107, 114)
+    );
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 0px 50px 0px 50px;
+}
+.description p {
+    padding: 10px 30px 50px 30px;
+    text-align: justify;
+    color: whitesmoke;
+}
+.description h3 {
+    padding: 50px 30px 10px 30px;
+    text-align: center;
+    color: whitesmoke;
+    font-weight: 700;
+}
+
+.card {
+    border-top: 5px solid rgb(12, 48, 46);
+    margin-bottom: 40px;
+    position: relative;
+    box-shadow: 0px 20px 30px 0px rgba(145, 141, 141, 0.596);
+
+    /* box-shadow: 0px 0px 30px 0.5px rgb(231, 226, 226); */
+    /* background-color: rgba(255, 255, 255, 0.561); */
+}
+.hello {
+    /* width: 50%; */
+}
+.post {
+    width: 80%;
+    margin-left: 10%;
+    /* margin-right: 10%; */
+}
+
+.post-bg {
+    background-color: rgba(255, 255, 255, 0.561);
+    padding-bottom: 20px;
+}
+
+.card-title {
+    padding-top: 20px;
+}
+.post-caption {
+    border-top: 5px solid rgb(12, 48, 46);
+    padding: 10px 5px;
+}
+.card-footer {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.card-footer .btn {
+    background-color: brown;
+    color: white;
+}

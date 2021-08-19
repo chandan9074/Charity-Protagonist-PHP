@@ -76,4 +76,8 @@ class HomeController extends Controller
     function dashboard(){
         return view("users.dashboard");
     }
+    
+    function profile(){
+        return view("users.profile");
+    }
 }

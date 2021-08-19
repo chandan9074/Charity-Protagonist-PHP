@@ -23,3 +23,4 @@ Route::get('/auth/signup', [HomeController::class, 'signup']);
 Route::post('/auth/save', [HomeController::class, 'save'])->name('auth.save');
 Route::post('/auth/check', [HomeController::class, 'check'])->name('auth.check');
 Route::get('/users/dashboard', [HomeController::class, 'dashboard']);
+Route::get('/users/profile', [HomeController::class, 'profile']);
