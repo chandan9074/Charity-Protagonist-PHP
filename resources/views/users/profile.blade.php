@@ -29,7 +29,7 @@
     <div class="sidebar">
     <div class="logo-details">
       <i class='bx bxl-c-plus-plus icon'></i>
-        <div class="logo_name">CodingLab</div>
+        <div class="logo_name">Charity</div>
         <i class='bx bx-menu' id="btn" ></i>
     </div>
     <ul class="nav-list">
@@ -53,62 +53,37 @@
        <span class="tooltip">Profile</span>
      </li>
      <li>
-       <a href="#">
+       <a href="{{url('/users/profile/create_post')}}">
          <i class='bx bx-chat' ></i>
-         <span class="links_name">Messages</span>
+         <span class="links_name">Create Post</span>
        </a>
-       <span class="tooltip">Messages</span>
+       <span class="tooltip">Create Post</span>
      </li>
      <li>
-       <a href="#">
+       <a href="{{url('/about')}}">
          <i class='bx bx-pie-chart-alt-2' ></i>
-         <span class="links_name">Analytics</span>
+         <span class="links_name">About</span>
        </a>
-       <span class="tooltip">Analytics</span>
+       <span class="tooltip">About</span>
      </li>
      <li>
-       <a href="#">
-         <i class='bx bx-folder' ></i>
-         <span class="links_name">File Manager</span>
-       </a>
-       <span class="tooltip">Files</span>
-     </li>
-     <li>
-       <a href="#">
-         <i class='bx bx-cart-alt' ></i>
-         <span class="links_name">Order</span>
-       </a>
-       <span class="tooltip">Order</span>
-     </li>
-     <li>
-       <a href="#">
+       <a href="{{url('/feedback')}}">
          <i class='bx bx-heart' ></i>
-         <span class="links_name">Saved</span>
+         <span class="links_name">FeedBack</span>
        </a>
-       <span class="tooltip">Saved</span>
-     </li>
-     <li>
-       <a href="#">
-         <i class='bx bx-cog' ></i>
-         <span class="links_name">Setting</span>
-       </a>
-       <span class="tooltip">Setting</span>
+       <span class="tooltip">FeedBack</span>
      </li>
      <li class="profile">
-         <div class="profile-details">
-           <img src="profile.jpg" alt="profileImg">
-           <div class="name_job">
-             <div class="name">Prem Shahi</div>
-             <div class="job">Web designer</div>
-           </div>
-         </div>
-         <i class='bx bx-log-out' id="log_out" ></i>
+         <a href="{{url('/auth/login')}}">
+                    <i class='bx bx-log-out' id="log_out"></i>
+                    <span class="links_name">Logout</span>
+                </a>
      </li>
     </ul>
-  </div> -->
+  </div>
   <!-- <section class="home-section">
       <div class="text">Dashboard</div>
-  </section>
+  </section> -->
 
   <!--Main container. Everything must be contained within a top-level container.-->
   <div class="container-fluid" id="profile-page">
@@ -125,10 +100,10 @@
               <!-- Placeholder image using Placeholder.com -->
               <img src="/css/profilepage/profileImage/profile.jpeg" class="profile-photo"/>
               <!-- Header text (Person's name) -->
-              <h2><b>Prodeepti</b></h2>
-              <p class="text-muted">2020 - Running</p>
+              <h2><b>{{$LoggedUserInfo['name']}}</b></h2>
+              <p class="text-muted">{{$LoggedUserInfo['st_date']}}- Running</p>
 
-              <p class="text-center contact"> <span class="fas fa-phone"></span><b>01869232915</b></p>
+              <p class="text-center contact"> <span class="fas fa-phone"></span><b>{{$LoggedUserInfo['phone_no']}}</b></p>
               <button class="btn btn-donate">DONATE</button>
               <!-- Social buttons using anchor elements and btn-primary class to style -->
 <p>
@@ -165,7 +140,7 @@
                 <div class="card">
                     <div class="card-body">
                       <div class="post-bg">
-                        <h3 class="card-title"><b>Prodeepti</b></h3>
+                        <h3 class="card-title"><b>{{$LoggedUserInfo['name']}}</b></h3>
                         <p class="card-text"><small class="text-muted">3 days ago</small></p>
                       </div>
                       <p class="card-text post-caption">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -180,7 +155,7 @@
                 <div class="card">
                     <div class="card-body">
                       <div class="post-bg">
-                        <h3 class="card-title"><b>Prodeepti</b></h3>
+                        <h3 class="card-title"><b>{{$LoggedUserInfo['name']}}</b></h3>
                         <p class="card-text"><small class="text-muted">3 days ago</small></p>
                       </div>
                       <p class="card-text post-caption">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -195,7 +170,7 @@
                 <div class="card">
                     <div class="card-body">
                       <div class="post-bg">
-                        <h3 class="card-title"><b>Prodeepti</b></h3>
+                        <h3 class="card-title"><b>{{$LoggedUserInfo['name']}}</b></h3>
                         <p class="card-text"><small class="text-muted">3 days ago</small></p>
                       </div>
                       <p class="card-text post-caption">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>

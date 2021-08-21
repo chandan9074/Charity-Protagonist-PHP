@@ -24,3 +24,6 @@ Route::post('/auth/save', [HomeController::class, 'save'])->name('auth.save');
 Route::post('/auth/check', [HomeController::class, 'check'])->name('auth.check');
 Route::get('/users/dashboard', [HomeController::class, 'dashboard']);
 Route::get('/users/profile', [HomeController::class, 'profile']);
+Route::get('/feedback', [HomeController::class, 'feedback']);
+Route::get('/about', [HomeController::class, 'about']);
+Route::get('/users/profile/create_post', [HomeController::class, 'createPost']);
