@@ -18,7 +18,10 @@
 <body>
     <section class="home-section">
         <nav class="container-fluid navbar navbar-light mb-5 mb-md-0 nav-fixed">
-            <a class="navbar-brand text-uppercase text-white fs-2" href="#">Charity</a>
+            <div>
+                <a class="navbar-brand logo text-white" href="#">Charity Protagonist</a>
+            <h6 class="logo-sub">We <span>RISE</span> by lifting others</h6>
+            </div>
 
             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
 
@@ -51,7 +54,7 @@
                     <i class='bx bx-user'></i>
                     <span class="links_name">User</span>
                 </button>
-                <div class="d-flex order-first order-md-last">
+                <div class="d-flex align-items-center justify-content-center">
                     <input class="form-control border-1 border-secondary bg-body text-white me-2" type="search"
                         placeholder="Search" aria-label="Search">
                     <button class="btn btn-dark btn-outline-secondary text-white" type="submit"><i
@@ -66,9 +69,9 @@
         ?>
 
 
-        <div class="container mx-auto row justify-content-between g-5 my-5 p-0">
+        <div class="container mx-auto row justify-content-between g-5 my-5 p-0 charity-list">
             <div class="col-12 col-md-5 col-lg-4">
-                <div class="card content-size bg-color overflow-auto position-fixed">
+                <div class="card list-part content-size bg-color overflow-auto position-fixed">
                   <?php 
                        while ($row = $result->fetch_assoc()):
                    ?>
@@ -233,6 +236,54 @@
             </li>
         </ul>
     </div>
+    <footer class=" foot-part" >
+        <div class="row info">
+        <div class="col-1">
+
+        </div>
+        <div class="col-3">
+        <h2>Charity Protagonist</h2>
+        <h6>We <span>RISE</span> by lifting others</h6>
+        </div>
+        <div class="col-8 detail">
+        <div class="row">
+            <div class="col-2 detail-link">
+                <p>Dashboard</p>
+                <p>Profile</p>
+                <p>Charity List</p>
+            </div>
+            <div class="col-2 detail-link">
+                <p>Donate</p>
+                <p>Services</p>
+        <p>Tearms & Policy</p>
+            </div>
+            <div class="col-2 detail-link">
+                <p>Contact Us</p>
+                <p>Feedback</p>
+                <p>About</p>
+
+            </div>
+            <div class="col-2 detail-link">
+                <p><i class="fas fa-map-marker-alt"></i>Address:</p>
+            <p>Dhaka, Bangladesh</p>
+            </div>
+        </div>
+        </div>
+                </div>
+                <hr style="color: white; width: 60%; margin-left: 20%; margin-bottom: 80px;">
+
+                <div class="text-center">
+                    <button><i class="fab fa-facebook-f"></i></button>
+                    <button><i class="fab fa-instagram"></i></button>
+                    <button><i class="fab fa-google"></i></button>
+                <button> <i class="fab fa-twitter"></i></button>
+                    <button><i class="fab fa-linkedin-in"></i></button>
+            <br>
+                <small>CopyrightⒸ2021 AllRightsReserved</small>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/673896855a.js" crossorigin="anonymous"></script>
 
     <script src="/js/dash.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"

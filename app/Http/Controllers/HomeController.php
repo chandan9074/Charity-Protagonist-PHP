@@ -47,7 +47,8 @@ class HomeController extends Controller
         $save = $admin->save();
 
         if($save){
-            return back()->with('Success', 'New user created successfully');
+            // return back()->with('Success', 'New user created successfully');
+            return redirect('/auth/login');
         }
         else{
             return back()->with('Fail', 'Something want wrong');
@@ -77,6 +78,7 @@ class HomeController extends Controller
 
         if($save){
             return back()->with('Success', 'New user created successfully');
+            return redirect('/auth/login');
         }
         else{
             return back()->with('Fail', 'Something want wrong');
@@ -95,7 +97,7 @@ class HomeController extends Controller
         else{
             
             if(Hash::check($request->password, $userInfo->password)){
-                $request->session()->put('LoggedUser', $userInfo);
+                $request->session()->put('LoggedUser', $userInfo->id);
                 return redirect('users/dashboard');
             }
             else{

@@ -194,6 +194,7 @@
     </div> <!-- End row 1 -->
 
   </div> <!-- End main container -->
+   
 
     <!-- script file for profle part  -->
   <script src="https://kit.fontawesome.com/673896855a.js" crossorigin="anonymous"></script>
